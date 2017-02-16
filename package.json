@@ -1,0 +1,19 @@
+{
+  "name": "input-masking",
+  "version": "1.0.0",
+  "description": "Input Masking =====================",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbeerten/input-masking.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dbeerten/input-masking/issues"
+  },
+  "homepage": "https://github.com/dbeerten/input-masking#readme"
+}
