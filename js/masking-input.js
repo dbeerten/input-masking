@@ -36,7 +36,7 @@ var inputMask = {
       this.opts.masked = document.querySelectorAll( this.opts.masked );
     }
 
-    for(i = 0; i < this.opts.masked.length; i++) {
+    for(var i = 0; i < this.opts.masked.length; i++) {
       t = this.opts.masked[i]
       parentClass = t.parentNode.getAttribute('class');
 
@@ -122,8 +122,8 @@ var inputMask = {
     for (i = 0, j = 0; i < l; i++) {
         isInt = !isNaN(parseInt(strippedValue[j]));
         isLetter = strippedValue[j] ? strippedValue[j].match(/[A-Z]/i) : false;
-        matchesNumber = this.opts.mNum.indexOf(placeholder[i]) >= 0;
-        matchesLetter = this.opts.mChar.indexOf(placeholder[i]) >= 0;
+        var matchesNumber = this.opts.mNum.indexOf(placeholder[i]) >= 0;
+        var matchesLetter = this.opts.mChar.indexOf(placeholder[i]) >= 0;
         if ((matchesNumber && isInt) || (isCharsetPresent && matchesLetter && isLetter)) {
                 newValue += strippedValue[j++];
           } else if ((!isCharsetPresent && !isInt && matchesNumber) || (isCharsetPresent && ((matchesLetter && !isLetter) || (matchesNumber && !isInt)))) {
